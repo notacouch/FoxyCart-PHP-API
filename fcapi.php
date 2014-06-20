@@ -225,7 +225,7 @@ class Foxycart_Api
 		
 		$data = array_intersect_key((array) $data, $valid_filters);
 		$this
-			->_add_to_payload('api_action', 'transaction_list')
+			->_add_to_payload('api_action', 'customer_list')
 			->_add_to_payload($data);
 		
 		$this->_api_call();
